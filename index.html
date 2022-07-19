@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<title>Robotics Club IITK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <!-- <img src="data:image/png;base64,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" width="900px" height="200px"></img> -->
+        <img src="images/logo_club.png" width="900px" height="200px"></img>
+    </div>
+    <div class="navbar">
+        <a href="http://robo.sntiitk.in/blog/" target="_blank">Blog</a>
+        <a href="http://robo.sntiitk.in/projects/" target="_blank">Projects</a>
+        <a href="http://robo.sntiitk.in/tutorials/" target="_blank">Tutorials</a>
+        <a href="http://robo.sntiitk.in/team/" target="_blank">Team</a>
+        <a href="http://robo.sntiitk.in/faculty/" target="_blank">Faculty</a>
+        <a href="http://robo.sntiitk.in/alumni/" target="_blank">Alumni</a>
+        <a href="http://robo.sntiitk.in/#event" target="_blank">Events</a>
+        <a href="https://roboticsclubiitk.github.io" class="right" target="_blank">Official Website</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h1>About the club</h1>
+            <p>What if you could build a <b>R2D2</b>? How about <b>Transformers</b>? Or a <b>WALL-E?</b></p>
+            <p>If you have ever even secretly aspired to build your own robot, then the <b>Robotics Club, IITK</b> is the place for you! We are a diverse group of over-enthused robotics nerds who find roots across all academic departments of the institute as well as <strong>'seniority'</strong>. The club is a student body which finds its place under the Science and Technology Council, Student Gymkhana, IIT Kanpur. Interested in what kind of work we do? We build robots for academic purposes, to compete at both national and international events or just out of plain interest. Check out our project page and achievements.</p>
+            <p>Having those newbie jitters? No worry. We are here to induct you into the rapidly expanding world of robotics. One on one guidance, workshops and tutorials along with tools, equipments, components and workspace eagerly await you!</p>
+            <h3><strong>#HappyRoboting</strong></h3>
+        </div>
+        
+        <div class="main">
+            
+            <div id="ImageCarouselCSS" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#ImageCarouselCSS" data-slide-to="0" class="active"></li>
+                    <li data-target="#ImageCarouselCSS" data-slide-to="1"></li>
+                    <li data-target="#ImageCarouselCSS" data-slide-to="2"></li>
+                    <li data-target="#ImageCarouselCSS" data-slide-to="3"></li>
+                    <li data-target="#ImageCarouselCSS" data-slide-to="4"></li>
+                    <li data-target="#ImageCarouselCSS" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/mqdefault-1.jpg" class="d-block w-100" alt="Logo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/images-1.jpeg" class="d-block w-100" alt="robot">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/images.jpeg" class="d-block w-100" alt="robot">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/robotics-club-1.jpg" class="d-block w-100" alt="robot">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Unknown-1.jpeg" class="d-block w-100" alt="robot">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Unknown.jpeg" class="d-block w-100" alt="robot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a style="color: black" class="social-icon" href="mailto:roboticsclubiitkanpur@gmail.com" target="_blank">
+            <ion-icon name="mail-outline" size="large"></ion-icon>
+        </a>
+        <a style="color: rgb(0, 119, 181)" class="social-icon" href="https://www.facebook.com/roboclubiitkanpur/" target="_blank">
+            <ion-icon name="logo-facebook" size="large"></ion-icon>
+        </a>
+        <a style="color: red"class="social-icon" href="https://www.youtube.com/channel/UCWM9ZaOmev5otSwQqW3JICA" target="_blank">
+            <ion-icon name="logo-youtube" size="large"></ion-icon>
+        </a>
+        <a style="color: black" class="social-icon" href="https://github.com/RoboticsClubIITK" target="_blank">
+            <ion-icon name="logo-github" size="large"></ion-icon>
+        </a>
+        <p style="text-align: center;">This website is created by <a href="https://harshitc-27.github.io/portfolio_website/" target="_blank">Harshit Chaudhary</a> ©2022 All rights reserved.</p>
+        <p style="text-align: center;">This website uses information from the <a href="https://roboticsclubiitk.github.io" target="_blank">official website</a> of Robotics Club IITK.</p>
+        <p><strong>Contact Me (Harshit Chaudhary)</strong></p>
+        <a style="color: black; text-align: center;" class="social-icon" href="mailto:harshitc21@iitk.ac.in" target="_blank">
+            <ion-icon name="mail-outline" size="large"></ion-icon>
+        </a>
+        <a style="color: rgb(10, 102, 194)" class="social-icon" href="https://www.linkedin.com/in/harshit-chaudhary-2627b3226/" target="_blank">
+            <ion-icon name="logo-linkedin" size="large"></ion-icon>
+        </a>
+        <a style="color: black" class="social-icon" href="https://github.com/HarshitC-27" target="_blank">
+            <ion-icon name="logo-github" size="large"></ion-icon>
+        </a>
+        <a style="color: black" class="social-icon" href="tel:9528733787" target="_blank">
+            <ion-icon name="call-outline" size="large"></ion-icon>
+        </a>
+    </div>
+</body>
+</html>
